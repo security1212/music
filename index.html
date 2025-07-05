@@ -1,255 +1,207 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Mabiva">
-    <meta name="keywords" content="Mabiva, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MABIVA</title>
-
-    <!-- Google Font -->
+    <meta name="description" content="MABIVA - Official Music Website">
+    <title>MABIVA - Official Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
-    <link rel="stylesheet" href="css/nowfont.css" type="text/css">
-    <link rel="stylesheet" href="css/rockville.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-   
-    <!-- Header Section Begin -->
+    <!-- Header Section -->
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/kosher size 20.png" alt=""></a>
-                    </div>
+            <div class="header-content">
+                <div class="header-logo">
+                    <a href="#home">
+                        <img src="images/logo.png" alt="MABIVA Logo">
+                    </a>
                 </div>
-                <div class="col-lg-10 col-md-10">
-                    <div class="header__nav">
-                        <nav class="header__menu mobile-menu">
-                            <ul>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__right__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
+                <nav class="header-nav">
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
-                </div>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <div id="mobile-menu-wrap"></div>
         </div>
     </header>
-    <!-- Header Section End -->
 
-    <!-- Hero Section Begin -->
-    <section class="hero spad set-bg" data-setbg="img/mabiva.jpg">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hero__text">
-                        <span>New single</span>
-                        <h1>Hot Winter</h1>
-                                                  <div class="stream-section">
-  <h5>Listen Now</h5>
-  <div class="stream-links">
-    <a href="Https://open.Spotify.com/artist/6b9ztleGAH0w5p4MwPLQHK" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111624.png" alt="Spotify">
-    </a>
-    <a href=" http://itunes.apple.com/album/id1795438088?ls=1&app=itunes" target="_blank">
-       <img src="img/apple_music_logo_by_mattroxzworld_d982zrj-pre.png" alt="Apple Music">
-    </a>
-    <a href="Https://soundcloud.com/user-20369462/hot-winter?" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/145/145809.png" alt="SoundCloud">
-    </a>
-    <a href="Https://www.tiktok.com/@mabiva8" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok">
-    </a>
-  </div>
-</div>
-
-
-
-                        <a href="https://www.youtube.com/watch?v=p2mtaGyd6GQ" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-subtitle">New single</span>
+                    <h1 class="hero-title">Hot Winter</h1>
+                    
+                    <!-- Play Button -->
+                    <div class="play-section">
+                        <button class="play-btn" id="playBtn" aria-label="Play Hot Winter">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Streaming Links Sidebar -->
+                <div class="streaming-sidebar">
+                    <h5>Listen Now</h5>
+                    <div class="stream-links">
+                        <a href="https://open.spotify.com/artist/6b9ztleGAH0w5p4MwPLQHK" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                            <img src="images/spotify-icon.png" alt="Spotify">
+                        </a>
+                        <a href="http://itunes.apple.com/album/id1795438088?ls=1&app=itunes" target="_blank" rel="noopener" aria-label="Listen on Apple Music">
+                            <img src="images/apple-music-icon.png" alt="Apple Music">
+                        </a>
+                        <a href="https://soundcloud.com/user-20369462/hot-winter?" target="_blank" rel="noopener" aria-label="Listen on SoundCloud">
+                            <img src="images/soundcloud-icon.png" alt="SoundCloud">
+                        </a>
+                        <a href="https://www.tiktok.com/@mabiva8" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+                            <img src="images/tiktok-icon.png" alt="TikTok">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="linear__icon">
-            <i class="fa fa-angle-double-down"></i>
+        <div class="scroll-indicator">
+            <i class="fas fa-angle-double-down"></i>
         </div>
     </section>
-    <!-- Hero Section End -->
 
-    <!-- Event Section Begin -->
-    <section class="event spad">
+    <!-- Events Section -->
+    <section class="events">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="section-title">
+                <h2>Upcoming Events</h2>
+            </div>
+            <div class="events-slider">
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="images/merch-cover.jpg" alt="Merchandise">
+                        <div class="event-date">
+                            <span>Soon!!!</span>
+                        </div>
+                    </div>
+                    <div class="event-text">
+                        <h4>Cloths</h4>
+                        <p><i class="fas fa-clock"></i> Not available now check back in december</p>
+                    </div>
+                </div>
+                
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="images/jewelry-cover.jpg" alt="Jewelleries">
+                        <div class="event-date">
+                            <span>Soon!!!</span>
+                        </div>
+                    </div>
+                    <div class="event-text">
+                        <h4>Jewelleries</h4>
+                        <p><i class="fas fa-clock"></i> Not available now check back in december</p>
+                    </div>
+                </div>
+                
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="images/music-video-cover.jpg" alt="Music Video">
+                        <div class="event-date">
+                            <span>Soon!!!</span>
+                        </div>
+                    </div>
+                    <div class="event-text">
+                        <h4>Music video HOT WINTER</h4>
+                        <p><i class="fas fa-clock"></i> coming soon</p>
+                    </div>
+                </div>
+                
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="images/album-cover.jpg" alt="Album">
+                        <div class="event-date">
+                            <span>Soon!!!</span>
+                        </div>
+                    </div>
+                    <div class="event-text">
+                        <h4>New Singles Coming Soon</h4>
+                        <p><i class="fas fa-clock"></i> Release period around August - September</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/mabiva-photo.jpg" alt="Mabiva">
+                </div>
+                <div class="about-text">
                     <div class="section-title">
-                        <h2>Upcoming Events</h2>
+                        <h2>Mabiva</h2>
+                        <h1>About me</h1>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="event__slider owl-carousel">
-                    <div class="col-lg-4">
-                        <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/merch.jpg">
-                                <div class="tag-date">
-                                    <span>Soon!!!</span>
-                                </div>
-                            </div>
-                            <div class="event__item__text">
-                                <h4>Cloths</h4>
-                                <p><i class="fa fa-clock"></i> Not available now check back in december</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/merch.jpg">
-                                <div class="tag-date">
-                                    <span>Soon!!!</span>
-                                </div>
-                            </div>
-                            <div class="event__item__text">
-                                <h4>Jewelleries</h4>
-                                <p><i class="fa fa-clock"></i> Not available now check back in december</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/merch.jpg">
-                                <div class="tag-date">
-                                    <span>Soon!!!</span>
-                                </div>
-                            </div>
-                            <div class="event__item__text">
-                                <h4>music video HOT WINTER</h4>
-                                <p><i class="fa fa-clock"></i> coming soon</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/merch.jpg">
-                                <div class="tag-date">
-                                    <span>Soon!!!</span>
-                                </div>
-                            </div>
-                            <div class="event__item__text">
-                                <h4>ALBUM to be released later this year</h4>
-                                <p><i class="fa fa-clock"></i> release date to be announced in
-few months time</p>
-                            </div>
-                        </div>
-                    </div>
+                    <p>Mabiva knows how to move your mind, body and soul by delivering tracks that stand out from the norm. As if this impressive succession of high impact, floor-filling bombs wasn't enough to sustain.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Event Section End -->
 
-    <!-- About Section Begin -->
-    <section class="about spad">
+    <!-- Track Section -->
+    <section class="track">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about__pic">
-                        <img src="img/mabiva.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about__text">
-                        <div class="section-title">
-                            <h2>Mabiva</h2>
-                            <h1>About me</h1>
-                        </div>
-                        <p>Mabiva knows how to move your mind, body and soul by delivering tracks that stand out
-                            from the norm. As if this impressive succession of high impact, floor-filling bombs wasn’t
-                            enough to sustain.</p>
-                        <a href="./contact.html" class="primary-btn">CONTACT ME</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section End -->
-
-   
-    <!-- Track Section Begin -->
-    <section class="track spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
+            <div class="track-content">
+                <div class="track-info">
                     <div class="section-title">
                         <h2>Latest tracks</h2>
                         <h1>Music podcast</h1>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-7 p-0">
-                    <div class="track__content nice-scroll">
-                        <div class="single_player_container">
-                            <h4>Mabiva Hot Winter</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_6"
-                                data-url="music-files/HOTWINTER.mp3"></div>
-                            <div class="jp-audio jp_container_6" role="application" aria-label="media player">
-                                <div class="jp-gui jp-interface">
-                                    <!-- Player Controls -->
-                                    <div class="player_controls_box">
-                                        <button class="jp-play player_button" tabindex="0"></button>
-                                    </div>
-                                    <!-- Progress Bar -->
-                                    <div class="player_bars">
-                                        <div class="jp-progress">
-                                            <div class="jp-seek-bar">
-                                                <div>
-                                                    <div class="jp-play-bar">
-                                                        <div class="jp-current-time" role="timer" aria-label="time">0:00
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                                    </div>
-                                    <!-- Volume Controls -->
-                                    <div class="jp-volume-controls">
-                                        <button class="jp-mute" tabindex="0"><i
-                                                class="fa fa-volume-down"></i></button>
-                                        <div class="jp-volume-bar">
-                                            <div class="jp-volume-bar-value" style="width: 0%;"></div>
-                                        </div>
-                                    </div>
+                    <div class="player-container">
+                        <h4>Mabiva Hot Winter</h4>
+                        <div class="music-player">
+                            <div class="player-controls">
+                                <button class="play-pause-btn" id="trackPlayBtn" aria-label="Play/Pause">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                                <div class="time-display">
+                                    <span class="current-time">0:00</span>
+                                    <span class="duration">3:45</span>
+                                </div>
+                            </div>
+                            <div class="volume-controls">
+                                <button class="volume-btn" aria-label="Volume">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                                <div class="volume-bar">
+                                    <div class="volume-fill"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="lyrics-box" style="background-image: url('img/roses-background.jpg');">
+                <div class="lyrics-container">
+                    <div class="lyrics-box">
                         <h4 class="lyrics-title">Lyrics</h4>
-                            <pre>
-HOT WINTER
+                        <div class="lyrics-content">
+                            <pre>HOT WINTER
 
 Everyday Sunshine
 charming pink moon light
@@ -278,7 +230,7 @@ switching lanes in milestones
 Heading to the west coast
 Holding hands at bright night
 staring at the star light
-Blinking at your pretty smile feels tight
+Blinking at your pretty smile feels right
 Whisky high purple sky
 dreamy bride lullaby
 7 stars Oh my Oh my
@@ -286,7 +238,6 @@ Bonnie mild Butterfly
 Let me take you by surprise
 Yeah yeah
 
-Rap Verse:
 Just in time
 Right on time
 You came through
@@ -303,142 +254,95 @@ I just can't refuse
 either valentine or summertime
 You always be my Hot winter
 Yours sincerely
-MABIVA
-  </pre>
+MABIVA</pre>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Track Section End -->
 
-    <!-- Youtube Section Begin -->
-    <section class="youtube spad">
+    <!-- Video Section -->
+    <section class="videos">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Youtube feed</h2>
-                        <h1>Latest videos</h1>
-                    </div>
-                </div>
+            <div class="section-title center">
+                <h2>Video</h2>
+                <h1>Latest videos</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="youtube__item">
-                        <div class="youtube__item__pic set-bg" data-setbg="img/merch.jpg">
-                            <a href="https://www.youtube.com/watch?v=p2mtaGyd6GQ" class="play-btn video-popup"><i class="fa fa-play"></i></a>
-                        </div>
-                        <div class="youtube__item__text">
-                            <h4>Mabiva Hot Winter</h4>
-                        </div>
+            <div class="video-content">
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="images/lyrics-video-cover.jpg" alt="Mabiva Hot Winter Lyrics Video">
+                        <button class="video-play-btn" data-video="https://www.youtube.com/watch?v=p2mtaGyd6GQ" aria-label="Play video">
+                            <i class="fas fa-play"></i>
+                        </button>
                     </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!-- Youtube Section End -->
-
-    <!-- Countdown Section Begin -->
-    <section class="countdown spad set-bg" data-setbg="img/mabiva.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="countdown__text">
-                        <h1>BIG NEWS</h1>
-                        <h4>ALBUM to be released later this year. </h4>
-                    </div>
-                    <div class="countdown__timer" id="countdown-time">
-                        <div class="countdown__item">
-                            <span>20</span>
-                            <p>days</p>
-                        </div>
-                        <div class="countdown__item">
-                            <span>45</span>
-                            <p>hours</p>
-                        </div>
-                        <div class="countdown__item">
-                            <span>18</span>
-                            <p>minutes</p>
-                        </div>
-                        <div class="countdown__item">
-                            <span>09</span>
-                            <p>seconds</p>
-                        </div>
-                    </div>
-                    <div class="buy__tickets">
-                        <a  class="primary-btn" style="color: white;">Wacth out!!!</a>
+                    <div class="video-text">
+                        <h4>Mabiva Hot Winter - Lyrics Video</h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Countdown Section End -->
 
-    <!-- Footer Section Begin -->
-    <footer class="footer spad set-bg" data-setbg="img/footer-bg.png">
+    <!-- Footer Section -->
+    <footer id="contact" class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer__address">
-                        <ul>
-                            <li>
-                                <i class="fa fa-phone"></i>
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
                                 <p>Phone</p>
                                 <h6>00000</h6>
-                            </li>
-                            <li>
-                                <i class="fa fa-envelope"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
                                 <p>Email</p>
                                 <h6>DIDIERDILLYSON@GMAIL.COM</h6>
-                            </li>
-                        </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-brand">
+                    <h2>Mabiva</h2>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 offset-lg-1 col-md-6">
-                    <div class="footer__social">
-                        <h2>Mabiva</h2>
-                        <div class="footer__social__links">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 col-md-6">
-                    <div class="footer__newslatter">
-                        <h4>Stay in touch</h4>
-                        <form action="#">
-                            <input type="text" placeholder="Email">
-                            <button type="submit"><i class="fa fa-send-o"></i></button>
-                        </form>
-                    </div>
+                <div class="footer-newsletter">
+                    <h4>Stay in touch</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email" required>
+                        <button type="submit" aria-label="Subscribe">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
-           
-			<div class="footer__copyright__text">
-				<p>&copy; <script>document.write(new Date().getFullYear());</script> All rights reserved</p>
-			</div>
-			
+            <div class="footer-copyright">
+                <p>&copy; <span id="currentYear"></span> All rights reserved</p>
+            </div>
         </div>
     </footer>
-    <!-- Footer Section End -->
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.barfiller.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close video">&times;</button>
+            <div class="video-container">
+                <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
-    <!-- Music Plugin -->
-    <script src="js/jquery.jplayer.min.js"></script>
-    <script src="js/jplayerInit.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
